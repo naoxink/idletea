@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IdleTea</title>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-38408823-2', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css">
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<ul id="nav">
+		<li><small class="unique" disabled="true">IdleTea v<span id="game-version"></span></small></li>
+		<li><a href="#!" id="save-game">Save</a></li>
+		<li><a href="#!" class="danger" id="hard-reset-game">Reset</a></li>
+		<li>
+			<ul id="language-selector">
+				<li><img class="flag" src="img/flags/es.svg" alt="es" title="es"></li>
+				<li><img class="flag" src="img/flags/us.svg" alt="en" title="en"></li>
+			</ul>
+		</li>
+	</ul>
+	<div id="content">
+		<div class="section">
+			<h2 id="resources-heading">Materiales</h2>
+			<div id="resources"></div>
+		</div>
+		<div class="section">
+			<div class="navigation-container"></div>
+			<div class="panel" id="buildings-panel">
+				<h2 id="buildings-heading">Construcciones</h2>
+				<div id="buildings"></div>
+			</div>
+			<div class="panel" id="researchs-panel">
+				<h2>Investigaciones</h2>
+				<div id="researchs"></div>
+			</div>
+		</div>
+		<div class="section">
+			<h2 id="log-heading">Registro</h2>
+			<div id="log-container">
+				<div id="log"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/include.js"></script>
+	<script>
+		var lang = 'en'
+		if(localStorage && localStorage.getItem('idletea-lang') !== null){
+			lang = localStorage.getItem('idletea-lang')
+		}
+		if(window.location.href.indexOf('lang=') !== -1){
+			lang = window.location.href.split('lang=')[1]
+		}
+		if(localStorage){
+			localStorage.setItem('idletea-lang', lang)
+		}
+		include([
+			'lang/' + lang + '.js',
+			'js/skinnytip.js',
+			'js/game.js',
+			'js/ui.js',
+			'js/timer.js',
+			'js/resources.js',
+			'js/researchs.js',
+			'js/buildings.js',
+			'css/base.css',
+			'js/init.js'
+		], true)
+	</script>
+</body>
+</html>
