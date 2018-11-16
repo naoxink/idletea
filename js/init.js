@@ -31,6 +31,7 @@ SkinnyTip.init()
 var ul = UI.create('ul', { 'className': 'navigation' })
 UI.create('li', { 'innerHTML': LANG.common.buildings }).setAttrs({ 'data-show': 'buildings-panel' }).append(ul)
 UI.create('li', { 'innerHTML': LANG.common.researchs }).setAttrs({ 'data-show': 'researchs-panel' }).append(ul)
+UI.create('li', { 'innerHTML': LANG.common.achievements }).setAttrs({ 'data-show': 'achievements-panel' }).append(ul)
 ul.append('.navigation-container')
 
 // Funcionalidad de los paneles
