@@ -158,7 +158,8 @@ LANG = {
 		'researchs': 'Researchs',
 		'buildings': 'Buildings',
 		'investigationDone': 'Done',
-		'log': 'Log'
+		'log': 'Log',
+		'achievements': 'Achievements'
 	},
 	'ui': {
 		'logMessages': {
