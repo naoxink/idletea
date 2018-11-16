@@ -2,7 +2,7 @@ var availableResources = {
 	// Especial
 	'money': {
 		'type': 'unique',
-		'baseProduction': 1,
+		'baseProduction': .8,
 		'color': '#333'
 	},
 	// Bases
