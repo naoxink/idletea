@@ -158,7 +158,8 @@ LANG = {
 		'researchs': 'Investigaciones',
 		'buildings': 'Construcciones',
 		'investigationDone': 'Completada',
-		'log': 'Registro'
+		'log': 'Registro',
+		'achievements': 'Logros'
 	},
 	'ui': {
 		'logMessages': {
