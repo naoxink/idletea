@@ -55,6 +55,7 @@ UI.get('ul.navigation > li:first-child').click()
 // Cabeceras
 UI.get('#resources-heading').innerHTML = LANG.common.resources
 UI.get('#buildings-heading').innerHTML = LANG.common.buildings
+UI.get('#achievements-heading').innerHTML = LANG.common.achievements
 UI.get('#log-heading').innerHTML = LANG.common.log
 
 // Botones del menú
