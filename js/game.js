@@ -73,3 +73,31 @@ Game.hardReset = function(){
 	localStorage.removeItem('idletea-savegame')
 	location.reload()
 }
+
+// Recolectar
+Game.gathering = {
+	qtyPerClick: {  },
+	multiplier: {  },
+	gather: function(resourceId){
+		if(!Game.resources[resourceId]) return
+		var qty = this.qtyPerClick[resourceId] * this.multiplier[resourceId]
+		Game.resources[resourceId].available += qty
+		Game.resources[resourceId].produced += qty
+	},
+	unlock: function(resourceId){
+		if(!Game.resources[resourceId]) return
+		if(!this.multiplier[resourceId]) this.multiplier[resourceId] = 1
+		var btn = UI.create('button', {
+			'innerHTML': LANG.ui.buttons.gather + ' ' + LANG.resources[resourceId].toLowerCase() + ' (+' + (Game.gathering.qtyPerClick[resourceId] * Game.gathering.multiplier[resourceId]) + ')',
+			'id': 'gather-' + resourceId + '-button',
+			'className': 'gather-button'
+		})
+		UI.listener(btn.DOMElement, 'click', function(){ Game.gathering.gather(resourceId) })
+		btn.append('#gathering-buttons')
+	},
+	init: function(){
+		for(var resourceId in availableResources){
+			this.qtyPerClick[resourceId] = availableResources[resourceId].baseProduction || 0.000001
+		}
+	}
+}
