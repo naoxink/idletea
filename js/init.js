@@ -66,7 +66,6 @@ UI.get('#hard-reset-game').innerHTML = LANG.ui.buttons.reset
 
 // Botón recolectar
 Game.gathering.init()
-new Resource('tea')
 Game.gathering.unlock('tea')
 
 // Botón guardar
