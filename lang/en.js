@@ -159,7 +159,8 @@ LANG = {
 		'buildings': 'Buildings',
 		'investigationDone': 'Done',
 		'log': 'Log',
-		'achievements': 'Achievements'
+		'achievements': 'Achievements',
+		'gathering': 'Gathering'
 	},
 	'ui': {
 		'logMessages': {
@@ -178,7 +179,8 @@ LANG = {
 		'buttons': {
 			'save': 'Save',
 			'saved': 'Saved!',
-			'reset': 'Reset'
+			'reset': 'Reset',
+			'gather': 'Gather'
 		},
 		'confirms': {
 			'reset': 'All data will be erased, continue?'
