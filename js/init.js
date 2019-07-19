@@ -66,8 +66,8 @@ UI.get('#hard-reset-game').innerHTML = LANG.ui.buttons.reset
 
 // Botón recolectar
 Game.gathering.init()
-new Resource('purpleStone')
-Game.gathering.unlock('purpleStone')
+new Resource('tea')
+Game.gathering.unlock('tea')
 
 // Botón guardar
 UI.listener(UI.get('#save-game'), 'click', function(e){
