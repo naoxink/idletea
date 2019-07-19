@@ -40,7 +40,7 @@ html, body {
 
 .danger { color: #BE1717 !important; }
 
-a.building, a.research {
+a.building, a.research, .gather-button {
 	display: block;
 	width: 50%;
 	text-align: center;
@@ -201,4 +201,13 @@ ul.navigation > li.active {
 #language-selector .flag {
 	width: 15px;
 	cursor: pointer;
+}
+
+.gather-button {
+	cursor: pointer;
+	border-color: #546f00;
+	color: #546f00;
+	background-color: #f2ffcf;
+	border-left-width: 5px;
+	border-right-width: 5px;
 }
