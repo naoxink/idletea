@@ -31,7 +31,7 @@ SkinnyTip.init()
 var ul = UI.create('ul', { 'className': 'navigation' })
 UI.create('li', { 'innerHTML': LANG.common.buildings }).setAttrs({ 'data-show': 'buildings-panel' }).append(ul)
 UI.create('li', { 'innerHTML': LANG.common.researchs }).setAttrs({ 'data-show': 'researchs-panel' }).append(ul)
-UI.create('li', { 'innerHTML': LANG.common.achievements }).setAttrs({ 'data-show': 'achievements-panel' }).append(ul)
+// UI.create('li', { 'innerHTML': LANG.common.achievements }).setAttrs({ 'data-show': 'achievements-panel' }).append(ul)
 ul.append('.navigation-container')
 
 // Funcionalidad de los paneles
@@ -58,10 +58,16 @@ UI.get('#resources-heading').innerHTML = LANG.common.resources
 UI.get('#buildings-heading').innerHTML = LANG.common.buildings
 UI.get('#achievements-heading').innerHTML = LANG.common.achievements
 UI.get('#log-heading').innerHTML = LANG.common.log
+UI.get('#gathering-heading').innerHTML = LANG.common.gathering
 
 // Botones del menú
 UI.get('#save-game').innerHTML = LANG.ui.buttons.save
 UI.get('#hard-reset-game').innerHTML = LANG.ui.buttons.reset
+
+// Botón recolectar
+Game.gathering.init()
+new Resource('purpleStone')
+Game.gathering.unlock('purpleStone')
 
 // Botón guardar
 UI.listener(UI.get('#save-game'), 'click', function(e){
