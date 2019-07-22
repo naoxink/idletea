@@ -155,7 +155,7 @@ LANG = {
 		'research': 'Research',
 		'building': 'Building',
 		'resources': 'Resources',
-		'researchs': 'Researchs',
+		'researchs': 'Research',
 		'buildings': 'Buildings',
 		'investigationDone': 'Done',
 		'log': 'Log',
