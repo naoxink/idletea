@@ -8,8 +8,8 @@ test idle game about tea
 ---
 
 **Tasks:**
-- [x] Purple Stone resource
-- [x] Button for recolecting tea (base)
+- [ ] Rework game start
+- [ ] Recalc costs/earnings
 - [ ] Save gathering status
 - [ ] Researches for incrementing recolection tea from button
 - [ ] Prestige system (Purple Stone usage)
