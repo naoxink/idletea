@@ -51,13 +51,7 @@ var availableResearchs = {
 		},
 		'prices': {
 			'money': 50
-		},
-		'unlocks': [
-			{ 'building': 'mineralRefiner' },
-			{ 'building': 'soilRefiner' },
-			{ 'resource': 'gold' },
-			{ 'resource': 'silver' }
-		]
+		}
 	},
 	'mineralExtractionUpgrade': {
 		'effect': function(){
