@@ -76,7 +76,7 @@ var availableResearchs = {
 		'unlocks': [
 			{ 'resource': 'bamboo' },
 			{ 'research': 'bambooRecolectionUpgrade' },
-			{ 'research': 'baseResourcesUpgrade' }
+			{ 'research': 'baseResourcesUpgrade2' }
 		]
 	},
 	'factoryTime': {
@@ -167,7 +167,7 @@ var availableResearchs = {
 			'money': 100000
 		}
 	},
-	'baseResourcesUpgrade': {
+	'baseResourcesUpgrade2': {
 		'effect': function(){
 			for(key in Game.resources){
 				if(Game.resources[key].type === 'base'){
