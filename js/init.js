@@ -8,6 +8,7 @@ if(localStorage && localStorage.getItem('idletea-savegame') !== null){
 	new Resource('tea')
 	new Building('waterExtractor')
 	new Building('soilExtractor')
+	new Research('baseResourcesUpgrade')
 	new Research('resourceImprovement')
 	new Research('teaDrying')
 }
