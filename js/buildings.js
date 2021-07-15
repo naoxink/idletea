@@ -7,10 +7,10 @@ var availableBuildings = {
 			'minerals': 3
 		},
 		'effect': function(){
-			Game.resources.water.baseMultiplier += 0.05
+			Game.resources.water.baseMultiplier += 0.1
 		},
 		'destroyEffect': function(){
-			Game.resources.water.baseMultiplier -= 0.05
+			Game.resources.water.baseMultiplier -= 0.1
 		},
 	},
 	'soilExtractor': {
@@ -21,10 +21,10 @@ var availableBuildings = {
 			'minerals': 3
 		},
 		'effect': function(){
-			Game.resources.soil.baseMultiplier += 0.05
+			Game.resources.soil.baseMultiplier += 0.1
 		},
 		'destroyEffect': function(){
-			Game.resources.soil.baseMultiplier -= 0.05
+			Game.resources.soil.baseMultiplier -= 0.1
 		},
 		'unlocks': [
 			{ 'building': 'mineralExtractor' }
@@ -118,7 +118,7 @@ var availableBuildings = {
 			'money': 450,
 			'iron': 50,
 			'soil': 500,
-			'mud': 100
+			'mud': 25
 		},
 		'effect': function(){
 			Game.resources.mud.baseMultiplier -= 0.1
