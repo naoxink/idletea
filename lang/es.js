@@ -35,6 +35,10 @@ LANG = {
 			'title': 'Cosecha selectiva mejorada',
 			'description': 'Se mejora la selección de la cosecha y se aumenta la calidad del té producido'
 		},
+		'baseResourcesUpgrade': {
+			'title': 'Mejora de recolección básica',
+			'description': 'Mejora de extracción de materiales básicos (agua y tierra). También se mejora levemente la ganancia de dinero.'
+		},
 		'mineralExtractionUpgrade': {
 			'title': 'Mejora de extracción de minerales',
 			'description': 'Mejora bastante la extracción de minerales'
