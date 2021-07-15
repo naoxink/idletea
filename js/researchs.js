@@ -2,7 +2,7 @@ var availableResearchs = {
 	'resourceImprovement': {
 		'effect': function(){  },
 		'prices': {
-			'money': 100,
+			'money': 50,
 			'water': 50,
 			'soil': 50,
 			'minerals': 30
