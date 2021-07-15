@@ -43,6 +43,22 @@ var availableResearchs = {
 			'tea': 500
 		}
 	},
+	'baseResourcesUpgrade': {
+		'effect': function(){
+			Game.resources.money.baseMultiplier += .2
+			Game.resources.water.baseMultiplier += .5
+			Game.resources.soil.baseMultiplier += .5
+		},
+		'prices': {
+			'money': 50
+		},
+		'unlocks': [
+			{ 'building': 'mineralRefiner' },
+			{ 'building': 'soilRefiner' },
+			{ 'resource': 'gold' },
+			{ 'resource': 'silver' }
+		]
+	},
 	'mineralExtractionUpgrade': {
 		'effect': function(){
 			Game.resources.minerals.baseMultiplier += .5
