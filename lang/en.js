@@ -35,6 +35,10 @@ LANG = {
 			'title': 'Improved selective harvest',
 			'description': 'The selection of the harvest is improved and the quality of the tea produced is increased'
 		},
+		'baseResourcesUpgrade': {
+			'title': 'Basic extraction upgrade',
+			'description': 'Improved extraction of basic materials (water and land). Money earning is also slightly improved.'
+		},
 		'mineralExtractionUpgrade': {
 			'title': 'Improvement of mineral extraction',
 			'description': 'It improves the extraction of minerals'
